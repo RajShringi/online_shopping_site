@@ -35,10 +35,10 @@ function App() {
     let ItemInTheCart = cart.find((item) => item.id === product.id);
     if (!ItemInTheCart) {
       setCart([...cart, { quantity: 1, ...product }]);
-      navigate("/cart");
     } else {
       increaseItemQuantity(product.id);
     }
+    navigate("/cart");
   };
 
   const removeItemfromCart = (id) => {
