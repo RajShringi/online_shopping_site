@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <div className="container mx-auto my-4">
-      <div className="flex justify-between items-center flex-wrap gap-3">
+      <div className="flex justify-start items-center flex-wrap gap-20">
         {products.map((product) => {
           return <Product key={product.id} {...product} />;
         })}
